@@ -2,7 +2,7 @@
 
 
 ## JSON FILE
-`
+```
 <?php
 header('Content-type: application/json');
 ?>
@@ -33,17 +33,22 @@ header('Content-type: application/json');
    }
     ]
 }
-`
+```
 
 ## JS Functions to access Elements
 
 Respond saved in data
+```
 console.log(data);
+```
 
 ### Get number of *responses*
+```
 var n = Object.keys(data.responses).length;
+```
 
 ### Put options into an object
+```
 var objects = {};
 var i = 0;
 
@@ -52,3 +57,4 @@ data.responses[i].options.forEach(function(entry) {
       objects[i] = {text: entry.text, value: entry.value};
       i++;
   });
+```
